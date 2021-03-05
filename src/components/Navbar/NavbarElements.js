@@ -2,20 +2,18 @@ import styled from 'styled-components';
 import {Link as LinkRouter} from 'react-router-dom';
 
 export const Nav = styled.nav`
-	background: #101012;
+	background: ${({scrollNav}) => (scrollNav ? '#303038' : 'transparent')};
 	height: 100px;
-	/* margin-top: -80px; */
+	/* margin-top: -30px; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-size: 1rem;
-	position: sticky;
+	position: fixed;
 	top: 0;
 	z-index: 10;
-
-	@media screen and (max-width: 960px) {
-		transition: 0.8s all ease;
-	}
+	width: 100%;
+	transition: 0.8s all ease;
 `;
 
 export const NavBarContainer = styled.div`
