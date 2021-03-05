@@ -94,6 +94,8 @@ export const NavLoginButton = styled(LinkRouter)`
 	height: 50px;
 	background: transparent;
 	text-transform: capitalize;
+	display: grid;
+	place-items: center;
 
 	&:hover {
 	
