@@ -1,13 +1,15 @@
 import React from 'react'
 import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, NavLoginButton, NavDemoBtn } from './SidebarElements'
 
-const Sidebar = () => {
+const Sidebar = ({toggle, isOpen}) => {
     return (
-        <SidebarContainer>
-            <Icon>
+        <SidebarContainer isOpen={isOpen} onClick={toggle}>
+            <Icon onClick={toggle}>
                 <CloseIcon />
             </Icon>
             <SidebarWrapper>
+                {/* to="/" */}
+                {/* onClick={toggle} to navlinks */}
                 <NavLoginButton>
                     Log in
 				</NavLoginButton>
