@@ -1,0 +1,118 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+	box-sizing: border-box;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+/**
+ * Basic styles for links
+ */
+a {
+	text-decoration: none;
+}
+
+:root {
+	font-size: 1rem;
+	box-sizing: border-box;
+
+	// -webkit-box-sizing: border-box;
+	// scroll-behavior: smooth;
+
+	// ::-webkit-scrollbar {
+	//   width: 4.5px;
+	//   // border: 1px solid $font-color;
+	//   border-radius: 0.8em;
+	// }
+
+	// ::-webkit-scrollbar-track {
+	//   border-radius: 0;
+	//   // background-color: $white;
+	// }
+
+	// ::-webkit-scrollbar-thumb {
+	//   // background-color: $font-color;
+	// }
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Red Hat Display', sans-serif;
+	font-size: 1rem;
+	line-height: 1.5;
+	direction: rtl;
+	/* update text-align value to right;  on latin screens*/
+	direction: ltr;
+	/* update text-align value to left; on latin screens*/
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #101012;
+	color: #ffffff;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+  font-family: 'Red Hat Display', sans-serif;
+//   color: $font-color;
+}
+
+img {
+	border: none;
+	outline: none;
+	max-width: 100%;
+	height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+	font-family: 'Red Hat Display', sans-serif;
+}
