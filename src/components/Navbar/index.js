@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { Nav, NavBarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLoginButton, NavDemoBtn } from './NavbarElements'
 import { FaBars } from 'react-icons/fa';
+import Logo from '../../assets/images/logo.png'
 
 const Navbar = ({toggle}) => {
     const [scrollNav, setScrollNav] = useState(false)
@@ -21,9 +22,7 @@ const Navbar = ({toggle}) => {
         <>
             <Nav scrollNav={scrollNav}>
                 <NavBarContainer>
-                    <NavLogo to="/">
-                        KLIC
-                    </NavLogo>
+                    <NavLogo to="/" src={Logo} alt="klic logo"></NavLogo>
                     <MobileIcon onClick={toggle}>
 						<FaBars />
 					</MobileIcon>

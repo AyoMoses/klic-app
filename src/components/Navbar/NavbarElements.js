@@ -32,19 +32,11 @@ export const NavBarContainer = styled.div`
 		padding: 0;
     }
 `;
-export const NavLogo = styled(LinkRouter)`
-	color: #fff;
+export const NavLogo = styled.img`
 	justify-self: flex-start;
 	cursor: pointer;
-	font-size: 1.5rem;
-	display: flex;
-	align-items: center;
-	margin-left: 24px;
-	font-weight: bold;
-	text-decoration: none;
-	background: transparent;
-	border: none;
-	cursor: pointer;
+	width: auto;
+	height: 30px;
 
 	@media screen and (max-width: 768px) {
        margin-left: 0;
