@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import {Link as LinkRouter} from 'react-router-dom';
+import { Link as LinkRouter } from 'react-router-dom';
 
 export const Nav = styled.nav`
-	background: ${({scrollNav}) => (scrollNav ? '#303038' : 'transparent')};
+	background: ${({ scrollNav }) => (scrollNav ? '#303038' : 'transparent')};
 	height: 100px;
 	display: flex;
 	justify-content: center;
@@ -26,6 +26,11 @@ export const NavBarContainer = styled.div`
 	width: 100%;
 	max-width: calc(100% - 100px);
 	margin: 0 auto;
+
+	@media screen and (max-width: 768px) {
+        max-width: calc(100% - 48px);
+		padding: 0;
+    }
 `;
 export const NavLogo = styled(LinkRouter)`
 	color: #fff;
@@ -40,6 +45,10 @@ export const NavLogo = styled(LinkRouter)`
 	background: transparent;
 	border: none;
 	cursor: pointer;
+
+	@media screen and (max-width: 768px) {
+       margin-left: 0;
+    }
 `;
 
 

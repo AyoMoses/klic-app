@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import {Link as LinkRouter} from 'react-router-dom';
-import {FaTimes} from 'react-icons/fa';
+import { Link as LinkRouter } from 'react-router-dom';
+import { FaTimes } from 'react-icons/fa';
 
 export const SidebarContainer = styled.aside`
     position: fixed;
@@ -13,8 +13,8 @@ export const SidebarContainer = styled.aside`
     top: 0;
     left: 0;
     transition: 0.3s ease-ease-in-out;
-    opacity: ${({isOpen}) => (isOpen ? '100%' : '0')};
-    top: ${({isOpen}) => (isOpen ? '0' : '-100%')};
+    opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+    top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
 `
 
 export const CloseIcon = styled(FaTimes)`
@@ -50,7 +50,7 @@ export const NavLoginButton = styled(LinkRouter)`
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
 	text-decoration: none;
-	width: 150px;
+	width: 190px;
 	height: 50px;
 	background: transparent;
 	text-transform: capitalize;
@@ -68,7 +68,11 @@ export const NavLoginButton = styled(LinkRouter)`
 	
 	background: rgba(61, 175, 205, 0.8);
 	box-shadow: 0.5px 2px 2px 2px rgba(61, 175, 205, 0.8);
-}
+	}
+
+	@media screen and (max-width: 768px) {
+        width: 170px;
+    }
 `
 
 export const NavDemoBtn = styled(LinkRouter)`
@@ -83,7 +87,7 @@ export const NavDemoBtn = styled(LinkRouter)`
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
 	text-decoration: none;
-	width: 150px;
+	width: 190px;
 	height: 50px;
 	text-transform: capitalize;
 	display: grid;
@@ -96,7 +100,11 @@ export const NavDemoBtn = styled(LinkRouter)`
 	}
 	&:active {
 	
-	background: rgba(61, 175, 205, 0.8);
-	box-shadow: 0.5px 2px 2px 2px rgba(61, 175, 205, 0.8);
-}
+		background: rgba(61, 175, 205, 0.8);
+		box-shadow: 0.5px 2px 2px 2px rgba(61, 175, 205, 0.8);
+	}
+
+	@media screen and (max-width: 768px) {
+        width: 170px;
+    }
 `
