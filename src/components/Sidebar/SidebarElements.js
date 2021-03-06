@@ -50,7 +50,7 @@ export const NavLoginButton = styled(LinkRouter)`
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
 	text-decoration: none;
-	width: 190px;
+	width: 150px;
 	height: 50px;
 	background: transparent;
 	text-transform: capitalize;
@@ -64,6 +64,11 @@ export const NavLoginButton = styled(LinkRouter)`
 		border: none;
 		box-shadow: 1px 3px 5px 5px rgba(61, 175, 205, 0.5);
 	}
+	&:active {
+	
+	background: rgba(61, 175, 205, 0.8);
+	box-shadow: 0.5px 2px 2px 2px rgba(61, 175, 205, 0.8);
+}
 `
 
 export const NavDemoBtn = styled(LinkRouter)`
@@ -78,7 +83,7 @@ export const NavDemoBtn = styled(LinkRouter)`
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
 	text-decoration: none;
-	width: 190px;
+	width: 150px;
 	height: 50px;
 	text-transform: capitalize;
 	display: grid;
@@ -89,4 +94,9 @@ export const NavDemoBtn = styled(LinkRouter)`
 		opacity: 0.8;
 		box-shadow: 1px 3px 5px 5px rgba(61, 175, 205, 0.5);
 	}
+	&:active {
+	
+	background: rgba(61, 175, 205, 0.8);
+	box-shadow: 0.5px 2px 2px 2px rgba(61, 175, 205, 0.8);
+}
 `

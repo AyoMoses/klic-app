@@ -4,7 +4,6 @@ import {Link as LinkRouter} from 'react-router-dom';
 export const Nav = styled.nav`
 	background: ${({scrollNav}) => (scrollNav ? '#303038' : 'transparent')};
 	height: 100px;
-	/* margin-top: -30px; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -81,14 +80,14 @@ export const NavLoginButton = styled(LinkRouter)`
 	border-radius: 50px;
 	white-space: nowrap;
 	color: #ffffff;
-	font-size: 1.2rem;
-	font-weight: 800;
+	font-size: 1rem;
+	font-weight: 900;
 	outline: none;
 	border: 2px solid #3dafcd;
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
 	text-decoration: none;
-	width: 190px;
+	width: 150px;
 	height: 50px;
 	background: transparent;
 	text-transform: capitalize;
@@ -102,6 +101,11 @@ export const NavLoginButton = styled(LinkRouter)`
 		border: none;
 		box-shadow: 1px 3px 5px 5px rgba(61, 175, 205, 0.5);
 	}
+	&:active {
+	
+		background: rgba(61, 175, 205, 0.8);
+		box-shadow: 0.5px 2px 2px 2px rgba(61, 175, 205, 0.8);
+	}
 `
 
 export const NavDemoBtn = styled(LinkRouter)`
@@ -109,14 +113,14 @@ export const NavDemoBtn = styled(LinkRouter)`
 	white-space: nowrap;
 	color: #ffffff;
 	background: #3dafcd;
-	font-size: 1.2rem;
-	font-weight: 800;
+	font-size: 1rem;
+	font-weight: 900;
 	outline: none;
 	border: none;
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
 	text-decoration: none;
-	width: 190px;
+	width: 150px;
 	height: 50px;
 	text-transform: capitalize;
 	display: grid;
@@ -127,4 +131,9 @@ export const NavDemoBtn = styled(LinkRouter)`
 		opacity: 0.8;
 		box-shadow: 1px 3px 5px 5px rgba(61, 175, 205, 0.5);
 	}
+	&:active {
+	
+	background: rgba(61, 175, 205, 0.8);
+	box-shadow: 0.5px 2px 2px 2px rgba(61, 175, 205, 0.8);
+}
 `
