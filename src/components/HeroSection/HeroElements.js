@@ -11,7 +11,6 @@ export const HeroContainer = styled.section`
     @media screen and (max-width: 768px) {
         grid-template-columns: 1fr;
         margin-top: 30px;
-        height: calc(70vh - 100px);
     }
 `
 export const HeroImageWrap = styled.img`
