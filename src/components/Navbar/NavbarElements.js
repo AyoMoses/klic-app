@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link as LinkRouter } from 'react-router-dom';
 
 export const Nav = styled.nav`
-	background: ${({ scrollNav }) => (scrollNav ? '#303038' : 'transparent')};
+	background: ${({ scrollNav }) => (scrollNav ? '#03033f' : 'transparent')};
 	height: 100px;
 	display: flex;
 	justify-content: center;
