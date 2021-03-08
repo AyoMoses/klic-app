@@ -4,6 +4,7 @@ import Sidebar from '../../components/Sidebar'
 import Hero from '../../components/HeroSection/hero'
 import { PageContainer, PageInner } from './HomePageElements'
 import Brands from '../../components/Brands/brands'
+import ProductSlide from '../../components/ProductSlider/productslide'
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -21,6 +22,7 @@ const Home = () => {
                 <PageInner>
                     <Hero />
                     <Brands />
+                    <ProductSlide />
                 </PageInner>
             </PageContainer>
         </>
